@@ -1,5 +1,4 @@
 import './styles/normalize.scss';
-import './App.scss';
 import { Calendar } from './components/calendar/Calendar';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
