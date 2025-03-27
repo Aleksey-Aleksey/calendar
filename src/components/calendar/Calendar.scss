@@ -1,0 +1,55 @@
+.calendar {
+  height: 100vh;
+  padding: 20px;
+
+  &__toolbar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    padding: 6px 12px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #084fc7;
+    }
+  }
+
+  &__core {
+    height: 90%;
+
+    &-inner {
+      height: 100%;
+
+      .rbc-calendar {
+        height: 100%;
+      }
+
+      .rbc-event {
+        background-color: transparent !important;
+        border: none;
+        padding: 0;
+      }
+
+      .rbc-event-label {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+      }
+
+      .rbc-event-content {
+        pointer-events: none;
+      }
+
+      .rbc-addons-dnd-resize-ns-anchor,
+      .rbc-addons-dnd-resize-ew-anchor {
+        display: none !important;
+      }
+    }
+  }
+}
